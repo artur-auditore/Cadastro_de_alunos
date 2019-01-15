@@ -17,9 +17,15 @@
             android:icon="@drawable/campus_1__733835"
             android:title="Faculdades" />
         <item
+<<<<<<< HEAD
             android:id="@+id/nav_alunos_diplomado"
             android:icon="@drawable/ic_menu_manage"
             android:title="Alunos Diplomados" />
+=======
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Configurações" />
+>>>>>>> cab9b3693451e98914e40a13bfc0755cc70a6543
     </group>
 
 </menu>

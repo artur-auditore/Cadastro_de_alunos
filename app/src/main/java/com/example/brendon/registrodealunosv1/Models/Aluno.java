@@ -31,5 +31,8 @@ public class Aluno {
     public String getFaculdade() {
         return faculdade;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> cab9b3693451e98914e40a13bfc0755cc70a6543
 }

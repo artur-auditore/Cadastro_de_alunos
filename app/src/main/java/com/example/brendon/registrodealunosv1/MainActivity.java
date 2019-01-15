@@ -8,13 +8,19 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+<<<<<<< HEAD
 import android.support.v7.app.AppCompatDialogFragment;
+=======
+>>>>>>> cab9b3693451e98914e40a13bfc0755cc70a6543
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
 
+<<<<<<< HEAD
 import com.example.brendon.registrodealunosv1.Fragments.AlunosDiplomadosFragment;
+=======
+>>>>>>> cab9b3693451e98914e40a13bfc0755cc70a6543
 import com.example.brendon.registrodealunosv1.Fragments.AlunosFragment;
 import com.example.brendon.registrodealunosv1.Fragments.FaculdadesFragment;
 import com.example.brendon.registrodealunosv1.Fragments.InicioFragment;
@@ -89,12 +95,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (id == R.id.nav_aluno) {
             fragmentManager.beginTransaction().replace(R.id.main, new AlunosFragment()).commit();
 
+<<<<<<< HEAD
         } else if (id == R.id.nav_faculdades) {
             fragmentManager.beginTransaction().replace(R.id.main, new FaculdadesFragment()).commit();
 
         } else if (id == R.id.nav_alunos_diplomado) {
             fragmentManager.beginTransaction().replace(R.id.main, new AlunosDiplomadosFragment()).commit();
 
+=======
+
+        } else if (id == R.id.nav_faculdades) {
+            fragmentManager.beginTransaction().replace(R.id.main, new FaculdadesFragment()).commit();
+
+        } else if (id == R.id.nav_manage) {
+>>>>>>> cab9b3693451e98914e40a13bfc0755cc70a6543
 
         }
 

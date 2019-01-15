@@ -4,12 +4,16 @@ import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+<<<<<<< HEAD
 import android.graphics.Color;
 import android.support.annotation.ColorInt;
+=======
+>>>>>>> cab9b3693451e98914e40a13bfc0755cc70a6543
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+<<<<<<< HEAD
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,6 +26,15 @@ import com.example.brendon.registrodealunosv1.Models.Aluno_Diplomado;
 import com.example.brendon.registrodealunosv1.Models.Faculdade;
 import com.example.brendon.registrodealunosv1.R;
 import com.example.brendon.registrodealunosv1.dal.App;
+=======
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.TextView;
+
+import com.example.brendon.registrodealunosv1.Models.Aluno;
+import com.example.brendon.registrodealunosv1.R;
+>>>>>>> cab9b3693451e98914e40a13bfc0755cc70a6543
 
 import io.objectbox.Box;
 
@@ -29,7 +42,10 @@ public class AlunoAdapter extends RecyclerView.Adapter<AlunoAdapter.AlunoViewHol
 
     private Context context;
     private Box<Aluno> listAlunos;
+<<<<<<< HEAD
     Box<Aluno_Diplomado> BoxAlunosDiplomados;
+=======
+>>>>>>> cab9b3693451e98914e40a13bfc0755cc70a6543
 
 
     public AlunoAdapter(Context context, Box<Aluno> listAlunos) {
@@ -42,14 +58,22 @@ public class AlunoAdapter extends RecyclerView.Adapter<AlunoAdapter.AlunoViewHol
     public AlunoViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.card_aluno, viewGroup, false);
+<<<<<<< HEAD
         BoxAlunosDiplomados = ((App)view.getContext().getApplicationContext()).getBoxStore().boxFor(Aluno_Diplomado.class);
         return new AlunoViewHolder(view);
 
+=======
+        return new AlunoViewHolder(view);
+>>>>>>> cab9b3693451e98914e40a13bfc0755cc70a6543
     }
 
     @SuppressLint("SetTextI18n")
     @Override
+<<<<<<< HEAD
     public void onBindViewHolder(@NonNull final AlunoViewHolder holder, final int position) {
+=======
+    public void onBindViewHolder(@NonNull AlunoViewHolder holder, final int position) {
+>>>>>>> cab9b3693451e98914e40a13bfc0755cc70a6543
         final Aluno alunoAtual = this.listAlunos.getAll().get(position);
 
         holder.txtNome.setText("Nome: " + alunoAtual.getNome());
@@ -98,6 +122,7 @@ public class AlunoAdapter extends RecyclerView.Adapter<AlunoAdapter.AlunoViewHol
             @Override
             public boolean onLongClick(final View view) {
 
+<<<<<<< HEAD
                 final PopupMenu menupop = new PopupMenu(AlunoAdapter.this.context, view,position);
                 menupop.getMenu().add("Diplomar Aluno").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
                     @Override
@@ -129,6 +154,8 @@ public class AlunoAdapter extends RecyclerView.Adapter<AlunoAdapter.AlunoViewHol
                 });
                 menupop.show();
 
+=======
+>>>>>>> cab9b3693451e98914e40a13bfc0755cc70a6543
                 return true;
             }
         });
